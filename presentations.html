@@ -1,0 +1,92 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSSIAN - modern, robust, standards-based web applications</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link href="fonts/black-tie/css/black-tie.min.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="css/flex@2.0.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script src="js/vendor/modernizr/modernizr-2.8.3.min.js"></script>
+        <style>
+        </style>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <noscript>
+            <div class="_fail">This web site requires JavaScript to run and your browser doesn't seem to allow it.</div>
+        </noscript>
+
+        <div class="animated app flex-set flex--column fadeIn presentations">
+
+            <section class="bg-black brand flex-set flex--content-end toolbar">
+                <div class="nav--back" id="js-back">
+                    <a href="work.html"><i class="btm bt-arrow-left"></i></a>
+                </div>
+                <div class="flexed-item--auto">&#160;</div>
+                <div class="brand--icon">
+                    <a href="https://google.com/+KevinMcGee_CSSian"><i class="fab fab-googleplus"></i></a>
+                </div>
+                <div class="brand--icon">
+                    <a href="https://twitter.com/netaisllc"><i class="fab fab-twitter"></i></a>
+                </div>
+                <div class="brand--icon">
+                    <a href="https://github.com/netaisllc"><i class="fab fab-github"></i></a>
+                </div>
+            </section>
+
+            <section class="container flexed-item scrollable">
+                <h1 class="white">Presentations</h1>
+                 <h4 class="guidance gray">Artifacts of training, explaining and education</h4>
+                <div class="animated artifacts fadeIn flex-set flex--wrap">
+                    <h2 class="loader">Just a sec, we're fetching artifacts from a remote source...</h2>
+                    <iframe
+                        allowfullscreen
+                        class="artifact hidden shadow--two"
+                        frameborder="0"
+                        id="pres-promises"
+                        mozallowfullscreen
+                        scrolling="no"
+                        src="//slides.com/kevinmcgee/simple-guide-to-promises/embed"
+                        webkitallowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+
+            <section class="bg-black flex-set flex--content-center toolbar--half">
+                <div class="footer">&#169; 2015 Netais Technology Management LLC</div>
+            </section>
+        </div>
+
+        <script>
+            // Brutally hack a short delay to fetch remote prezos
+            setTimeout( function( loader, artifact ) {
+                var loader = document.body.querySelectorAll('.loader' )[0];
+                loader.className = "hidden";
+
+                var artifact = document.body.querySelectorAll( '.artifact' )[0];
+                artifact.className = "artifact shadow--two";
+            }, 1000 );
+        </script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script -->
+
+    </body>
+</html>
