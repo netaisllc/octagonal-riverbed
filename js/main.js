@@ -3,13 +3,14 @@
 
 requirejs.config({
     paths: {
-       head: '../lib/reveal/lib/js/head.min',
-       reveal: '../lib/reveal/js/reveal'
+        ga: "ga",
+        head: '../lib/reveal/lib/js/head.min',
+        reveal: '../lib/reveal/js/reveal'
     }
 });
 
-require([ 'head', 'reveal' ],
-    function ( head, Reveal ) {
+require([ 'ga', 'head', 'reveal' ],
+    function ( ga, head, Reveal ) {
 
     // App...
     Reveal.initialize( {

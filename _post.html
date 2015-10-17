@@ -1,7 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-        <script src="js/vendor/modernizr/modernizr-2.8.3.min.js"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>CSSIAN - modern, robust, standards-based web applications</title>
@@ -15,6 +14,7 @@
         <link href="css/animate.min.css" rel="stylesheet">
         <link href="css/flex@2.0.css" rel="stylesheet">
         <link href="css/main.css" rel="stylesheet">
+        <script src="js/vendor/modernizr/modernizr-2.8.3.min.js"></script>
         <style>
         </style>
     </head>
@@ -26,9 +26,12 @@
             <div class="_fail">This web site requires JavaScript to run and your browser doesn't seem to allow it.</div>
         </noscript>
 
-        <div class="app flex-set flex--column home">
+        <div class="animated app flex-set flex--column fadeIn post">
 
             <section class="bg-black brand flex-set flex--content-end toolbar">
+                <div class="nav--back" id="js-back">
+                    <a href="perspective.html"><i class="btm bt-arrow-left"></i></a>
+                </div>
                 <div class="flexed-item--auto">&#160;</div>
                 <div class="brand--icon">
                     <a href="https://google.com/+KevinMcGee_CSSian"><i class="fab fab-googleplus"></i></a>
@@ -41,22 +44,21 @@
                 </div>
             </section>
 
-            <section class="animated container fadeIn flex-set flex--align-content-stretch">
-                <div class="content hero"></div>
-                <div class="content flex-set flex--column flex--content-center links">
-                    <div class="identity">
-                        <span>cssian</span>
-                    </div>
-                    <p class="tagline">Modern, robust, standards-based web applications</p>
-                    <div class="animated fadeIn link">
-                        <a href="work.html"><span class="work">Work</span></a>
-                    </div>
-                    <div class="animated fadeIn link">
-                         <a href="perspective.html"><span class="perspective">Perspective</span></a>
-                    </div>
-                    <div class="animated fadeIn link">
-                        <a href="details.html"><span class="details">Details</span></a>
-                    </div>
+            <section class="container flexed-item scrollable">
+                <h1 class="white">Presentations</h1>
+                <h4 class="guidance gray">Artifacts of training, explaining and education</h4>
+                <div class="animated artifacts fadeIn flex-set flex--wrap">
+                    <h2 class="loader">Just a sec, we're fetching artifacts from a remote source...</h2>
+                    <iframe
+                        allowfullscreen
+                        class="artifact hidden shadow--two"
+                        frameborder="0"
+                        id="pres-promises"
+                        mozallowfullscreen
+                        scrolling="no"
+                        src="//slides.com/kevinmcgee/simple-guide-to-promises/embed"
+                        webkitallowfullscreen>
+                    </iframe>
                 </div>
             </section>
 
